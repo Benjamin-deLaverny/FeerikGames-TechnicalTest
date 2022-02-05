@@ -6,7 +6,6 @@ namespace technical.test.editor
     public class SceneGizmoAsset : ScriptableObject
     {
         [SerializeField] public Gizmo[] _gizmos = default;
-
         public override string ToString()
         {
             return "Gizmo count : " + _gizmos.Length;
