@@ -21,7 +21,6 @@ public class GizmoEditor : EditorWindow
     } 
 
     private void displayGizmos(){
-        Debug.Log(spheres.Count);
         if(spheres.Count == 0){
             foreach(Gizmo gizmo in gizmoAsset._gizmos){
                 GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -64,6 +63,13 @@ public class GizmoEditor : EditorWindow
                 gizmoAsset._gizmos[i].Position = spheres[i].transform.position;
                 spheres[i].transform.hasChanged = false;
             }
+        }
+    }
+
+    void OnDestroy()
+    {
+        foreach(GameObject sphere in spheres){
+            DestroyImmediate(sphere);
         }
     }
 }
