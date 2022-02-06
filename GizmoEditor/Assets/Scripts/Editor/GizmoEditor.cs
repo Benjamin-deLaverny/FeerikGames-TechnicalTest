@@ -8,7 +8,7 @@ using technical.test.editor;
 
 public class GizmoEditor : EditorWindow
 {
-    private SceneGizmoAsset gizmoAsset = null;
+    public SceneGizmoAsset gizmoAsset = null;
     public List<GameObject> spheres = new List<GameObject>();
 
     [MenuItem("Window/Custom/Show Gizmos in Scene")]
@@ -20,7 +20,7 @@ public class GizmoEditor : EditorWindow
 
     } 
 
-    private void displayGizmos(){
+    public void displayGizmos(){
         if(spheres.Count == 0){
             foreach(Gizmo gizmo in gizmoAsset._gizmos){
                 GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -59,7 +59,7 @@ public class GizmoEditor : EditorWindow
 
     void Update(){
         for(int i = 0; i<spheres.Count; i++){
-            if(spheres[i].transform.hasChanged){
+            if(spheres[i] != null && spheres[i].transform.hasChanged){
                 gizmoAsset._gizmos[i].Position = spheres[i].transform.position;
                 spheres[i].transform.hasChanged = false;
             }
