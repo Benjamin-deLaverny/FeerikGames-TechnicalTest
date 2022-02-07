@@ -34,6 +34,7 @@ public class GizmoEditor : EditorWindow
     private void moveSphere(int id, SceneGizmoAsset gizmoAsset){
         Vector3 position = new Vector3(gizmoAsset._gizmos[id].Position.x, gizmoAsset._gizmos[id].Position.y, gizmoAsset._gizmos[id].Position.z);
         spheres[id].transform.position = position;
+        spheres[id].name = gizmoAsset._gizmos[id].Name;
     }
 
     private void OnGUI(){
