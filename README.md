@@ -15,6 +15,7 @@
 &emsp; - Appuyer sur ctrl+z permet de supprimer le dernier changement de position.<br/>
 
 ### Choix de conception <br/>
+&emsp; - La map se trouve dans la scène nommée "GizmoTestScene" mais les gizmos peuvent être utilisés dans n'importe quelle scène.<br/>
 &emsp; - Les gizmos apparaissent à l'ouverture de l'éditeur et sont supprimés à la fermeture.<br/>
 &emsp; - L'éditeur reste ouvert tant que le fichier "Scene Gizmo Asset.asset" est séléctionné. Le déselectionner permettra donc de fermer la fenêtre.<br/>
 
