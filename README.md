@@ -15,7 +15,8 @@
 &emsp; - Appuyer sur ctrl+z permet de supprimer le dernier changement de position.<br/>
 
 ### Choix de conception <br/>
-&emsp; - Les gizmos apparaissent à l'ouverture de l'éditeur.
+&emsp; - Les gizmos apparaissent à l'ouverture de l'éditeur.<br/>
+&emsp; - L'éditeur reste ouvert tant que le fichier "Scene Gizmo Asset.asset" est séléctionné. Le déselectionner permettra donc de fermer la fenêtre.<br/>
 
 ### Problèmes restants <br/>
 Il n'est pas très simple de modifier la position d'un gizmo directement depuis l'éditeur puis le bouton "Edit" pour une raison de conversion entre string et float. Il faut toujours qu'il reste dans la zone de texte un caractère que l'on peut convertir en float.<br/>
