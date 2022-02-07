@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-GizmoEditor/[Ll]ibrary/
-GizmoEditor/[Tt]emp/
-GizmoEditor/[Oo]bj/
-GizmoEditor/[Bb]uild/
-GizmoEditor/[Bb]uilds/
-GizmoEditor/[Ll]ogs/
-GizmoEditor/[Mm]emoryCaptures/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
