@@ -66,6 +66,16 @@ public class GizmoEditor : EditorWindow
         }
     }
 
+    [DrawGizmo(GizmoType.InSelectionHierarchy)]
+    static void DrawGameObjectName(Transform transform, GizmoType gizmoType)
+    {   
+        GUIStyle style = new GUIStyle();
+        style.normal.textColor = Color.black;
+        Vector3 textPos = transform.position;
+        textPos.y += 2;
+        Handles.Label(textPos, transform.gameObject.name,style);
+    }
+
     void OnDestroy()
     {
         foreach(GameObject sphere in spheres){
