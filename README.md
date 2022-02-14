@@ -1,4 +1,4 @@
-# FeerikGames-TechnicalTest<br/><br/>
+# TechnicalTest<br/><br/>
 
 ### Fonctionnalités implémentées <br/>
 &emsp; - Ouverture de l'éditeur en cliquant sur Window -> Custom -> Show Gizmos in Scene.<br/>
